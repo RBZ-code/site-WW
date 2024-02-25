@@ -1,0 +1,133 @@
+.mainHeader {
+  min-height: 610px;
+}
+
+
+.ticketButton-now {
+  background-color: #f10485;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: center;
+  padding: 10px 15px;
+}
+
+.ticketButton-now:hover {
+  background-color: #3913c3;
+}
+
+.ticketButton-now a {
+  display: flex;
+  align-items: center;
+}
+
+.btn_homepage_header img {
+  width: 20px;
+  margin-right: 0.5rem;
+  filter: invert(97%) sepia(10%) saturate(223%) hue-rotate(212deg)
+    brightness(114%) contrast(89%);
+}
+
+.btn_homepage_header {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  padding: 10px 20px;
+  background-color: rgba(147, 55, 148, 0.5);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn_homepage_header a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header-content p {
+  font-size: 0.9rem;
+  width: 50%;
+  margin: auto;
+}
+
+.compteur {
+  width: 80%;
+  background-image: url("/img/countdown/bg.png"),
+    url("/img/countdown/left-shape.png"), url("/img/countdown/right-shape.png");
+  background-size: cover;
+  background-position: center, left, right;
+  position: absolute;
+  top: 555px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3912c1;
+  height: auto;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.bloc-compteur {
+  height: 235px;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+
+.compteur-points {
+  text-align: center;
+}
+
+.bloc-compteur p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 700px) {
+  .mainIndex {
+    margin-top: 25rem;
+}
+  
+  .navbar {
+    padding-bottom: 0;
+  }
+  
+  .compteur-points {
+    min-width: 250px;
+  }
+
+  .compteur {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .bloc-compteur {
+    min-width: 450px;
+    height: auto;
+    gap: 5px;
+  }
+
+  .header-content p {
+    width: 80%;
+  }
+
+  .ticketButton-now {
+    margin-top: 30px;
+  }
+
+  .header-content h2{
+    font-size: 1.7rem;
+  }
+}

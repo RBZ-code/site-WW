@@ -1,0 +1,191 @@
+header{
+    background-image: url(/img/hero/hero-bg.jpg);
+    background-size: cover;
+    height: 420px;
+}
+
+/********* bouton *****************/
+
+
+.bouton-moblie-hearder{
+  display: none;
+}
+
+/************** nav *********/
+
+.logo img{
+  min-width: 170px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 10%;
+  position: relative;
+}
+
+.navbar .ticketButton {
+  margin-top: 0;
+}
+
+.navright{
+  display: flex;
+  align-items: center; 
+  gap: 11rem;
+
+}
+.links a{
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.header-content{
+  text-align: center;
+  margin-top: 1.6rem;
+  color: white;
+}
+/***************** titre page  ****************/
+
+.header-content h2{
+  margin-bottom: 1.4rem;
+  font-size: 38px;
+}
+
+.header-content span{
+  margin: 0 12px;
+}
+
+
+/*************************** Logo burger ******************************/
+
+.div-checkbox{
+  display: none;
+}
+.div-checkbox .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 30px 20px;
+  position: relative;
+  user-select: none;
+}
+.menu-icon .nav-icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 30px;
+  background: transparent;
+}
+
+.menu-icon .nav-icon:before,
+.menu-icon .nav-icon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.bg-burger{
+  background: linear-gradient(to top right, rgba(182, 7, 139, 0.8), rgba(80, 16, 179, 0.8));
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right:10px;
+  padding-left: 27px;
+  border-radius: 5px;
+}
+
+.menu-icon .nav-icon:before {
+  top: 5px;
+  right: 0px;
+  width: 50px;
+}
+
+.menu-icon .nav-icon:after {
+  top: 0px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  width: 30px;
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/***********side menu**********/
+
+.side-menu{
+  transform: translateX(-300%) rotate(-90deg);
+  background-color: rgba(151, 9, 151, 0.8);
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+.menu-btn:checked ~ .side-menu {
+  transform: translateX(0) rotate(0); 
+}
+.side-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.side-links a{
+  text-decoration: none;
+  color: white;
+}
+
+.side-links a:hover {
+  color: ;
+}
+
+@media screen and (max-width: 1200px) {
+  .navright{
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navright{
+    display: none;
+  }
+  .div-checkbox{
+    display: flex;
+  }
+  .bouton-moblie-hearder{
+    display: flex !important;
+    justify-content: center;
+  }
+  
+}
+
+@media screen and (max-width: 654px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 10%;
+  }
+}
+
